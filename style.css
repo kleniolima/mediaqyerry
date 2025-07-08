@@ -1,0 +1,123 @@
+/* ------------------------------
+   ESTILOS GERAIS (DESKTOP FIRST)
+------------------------------- */
+
+/* Exemplo de layout base */
+body {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 2em;
+}
+
+.design-menu {
+  position: absolute;
+  top: 560px;
+  left: 62%;
+  width: 35%;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+.explanation {
+  width: 60%;
+  margin-right: 35%;
+  border-right: 1px solid #1f295c;
+  padding-right: 2%;
+  box-sizing: border-box;
+}
+
+#beneficios,
+#participacao {
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+}
+
+/* Parágrafos com margem no layout desktop */
+p {
+  margin-top: 1em;
+}
+
+
+/* ------------------------------
+   1. MEDIA QUERY: TELAS MENORES QUE 768px
+------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  /* Remover posicionamento absoluto do menu */
+  .design-menu {
+    position: static;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  /* Remover borda lateral da explanation */
+  .explanation {
+    width: 100%;
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  /* Flexbox: mudar orientação para empilhar (coluna) */
+  #beneficios,
+  #participacao {
+    flex-direction: column;
+  }
+
+  /* Elementos internos se ajustam ao layout vertical */
+  #beneficios > *,
+  #participacao > * {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+  }
+
+  /* Remover altura fixa do cabeçalho */
+  header {
+    height: auto;
+    padding: 1.5em;
+  }
+
+  /* Remover espaçamento inicial dos parágrafos */
+  p {
+    margin-top: 0;
+  }
+}
+
+
+/* ------------------------------
+   2. MEDIA QUERY: IMPRESSÃO
+------------------------------- */
+
+@media print {
+
+  /* Usar fonte serifada para impressão */
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: white;
+  }
+
+  /* Inverter cores do banner (header) */
+  header {
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #aaa;
+  }
+
+  /* Opcional: remover elementos que não fazem sentido na impressão */
+  nav, .design-menu {
+    display: none;
+  }
+}
