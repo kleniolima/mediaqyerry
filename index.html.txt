@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Zen Garden - Responsivo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>CSS Zen Garden</h1>
+    <p>Transformando estilos com media queries e flexbox</p>
+  </header>
+
+  <!-- Menu de navegação -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Projetos</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="page-wrapper">
+
+    <!-- Seção explicação -->
+    <section class="explanation">
+      <h2>Explicação</h2>
+      <p>Este é o primeiro parágrafo da explicação principal. Ele será estilizado com pseudo-elementos e comportamentos específicos no layout responsivo e impresso.</p>
+      <p>Este é o segundo parágrafo para fins de comparação.</p>
+    </section>
+
+    <!-- Menu de designs -->
+    <aside class="design-menu">
+      <h2>Designs disponíveis</h2>
+      <ul>
+        <li>Design 1</li>
+        <li>Design 2</li>
+        <li>Design 3</li>
+      </ul>
+    </aside>
+
+    <!-- Seção de benefícios -->
+    <section id="beneficios">
+      <div class="texto">
+        <p>Conheça os benefícios de aplicar boas práticas de CSS: manutenção, legibilidade e escalabilidade.</p>
+      </div>
+      <div class="titulo">Benefícios</div>
+    </section>
+
+    <!-- Seção de participação -->
+    <section id="participacao">
+      <div>Como Participar</div>
+      <div>Regras do Projeto</div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <a href="#">Política</a>
+    <a href="#">Sobre</a>
+    <a href="#">Suporte</a>
+  </footer>
+
+</body>
+</html>
